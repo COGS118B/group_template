@@ -13,19 +13,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install Python and Dependencies
         uses: actions/setup-python@v4
         with:
-          python-version: 3.9  # Replace with your desired Python version
+          python-version: '3.10'
+          cache: 'pip'
+      - run: pip install jupyter
+      - run: pip install -r requirements.txt
 
-      - name: Install dependencies
-        run: pip install nbconvert jupyter pretty-jupyter
-
-      - name: Convert Notebook to HTML using pretty jupyder
-        run: jupyter nbconvert --to html --template pj FinalProject.ipynb  # Replace with the actual filename
-      
+      - name: Build and Publish
+        run: quarto render FinalProject.ipynb --to html
+        
       - name: Rename HTML file to index.html
-        run: mv FinalProject.html index.html  # Replace with the actual filename
+        run: mv FinalProject.html index.html
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
