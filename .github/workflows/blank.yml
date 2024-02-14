@@ -1,0 +1,36 @@
+name: Convert and Deploy Notebook
+
+on:
+  push:
+    branches:
+      - main  # Replace with the branch you want to trigger the action
+
+jobs:
+  Export:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9  # Replace with your desired Python version
+
+      - name: Install dependencies
+        run: pip install nbconvert jupyter pretty-jupyter
+
+      - name: Convert Notebook to HTML using pretty jupyder
+        run: jupyter nbconvert --to html --template pj FinalProject.ipynb  # Replace with the actual filename
+      
+      - name: Rename HTML file to index.html
+        run: mv FinalProject.html index.html  # Replace with the actual filename
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .  # Use the root directory to publish the converted HTML file
+
