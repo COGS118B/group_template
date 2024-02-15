@@ -4,7 +4,7 @@ Ideas:
 LLM    -based off datasets we like, right now it's sports
        -football commentary, using the llm for analysis on games
 Music  - give me artists/songs/podcasts similar to what I listen to
-       -showcasing upcoming concerts in the area
+       -showcasing upcoming concerts in the areas
 Prediction
        -medical rates on readmission of patients
        -football stats
