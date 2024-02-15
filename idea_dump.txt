@@ -1,0 +1,10 @@
+Football Commentary for LLM:
+https://www.kaggle.com/datasets/patzshane/football-commentary-data-set-college-and-nfl
+Ideas:
+LLM    -based off datasets we like, right now it's sports
+       -football commentary, using the llm for analysis on games
+Music  - give me artists/songs/podcasts similar to what I listen to
+       -showcasing upcoming concerts in the area
+Prediction
+       -medical rates on readmission of patients
+       -football stats
