@@ -7,4 +7,5 @@ Music  - give me artists/songs/podcasts similar to what I listen to
        -showcasing upcoming concerts in the areas
 Prediction
        -medical rates on readmission of patients
+              -get patient demographic data, clinical notes, etc to gather data 
        -football stats
