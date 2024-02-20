@@ -1,5 +1,12 @@
 Football Commentary for LLM:
 https://www.kaggle.com/datasets/patzshane/football-commentary-data-set-college-and-nfl
+
+Stats for Football:
+https://www.kaggle.com/datasets/ttalbitt/american-football-team-stats-1998-2019
+
+Superbowl winners:
+https://www.kaggle.com/datasets/timoboz/superbowl-history-1967-2020
+
 Ideas:
 LLM    -based off datasets we like, right now it's sports
        -football commentary, using the llm for analysis on games
