@@ -7,6 +7,11 @@ https://www.kaggle.com/datasets/ttalbitt/american-football-team-stats-1998-2019
 Superbowl winners:
 https://www.kaggle.com/datasets/timoboz/superbowl-history-1967-2020
 
+Articles used:
+* Background
+- https://www.sciencedirect.com/science/article/pii/S0169207011000914?pes=vor#section-cited-by
+- https://www.jair.org/index.php/jair/article/view/13509/26786
+
 Ideas:
 LLM    -based off datasets we like, right now it's sports
        -football commentary, using the llm for analysis on games
