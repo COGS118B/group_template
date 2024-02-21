@@ -17,3 +17,7 @@ Prediction
        -medical rates on readmission of patients
               -get patient demographic data, clinical notes, etc to gather data 
        -football stats
+Superbowl History of past wins
+How each team is doing in the regular season
+information about players on each team (their stats)
+points scored during the season, how many touchdowns scored
